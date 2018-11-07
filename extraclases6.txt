@@ -1,0 +1,98 @@
+Realizar miniespecificacion para cada ejercicio
+
+Ejercicio 1
+
+Las siguientes son las edades de un conjunto de estudiantes:
+[10,18,19,11,20,21,16,15,11,12]
+Se desea encontrar el promedio de edades, solo de las edades mayores o iguales a 16
+
+
+1.Inicio
+2.(Edades (10) i [0, n]) <- [10,18,19,11,20,21,16,15,11,12]
+3.(suma i [0, n])
+4.(promedio i [0, n])
+5.mientras contador < 9
+	6.si edades >= 16 entonces 
+	7. suma <- suma + edades[contador]
+8.fin si
+9.contador + 1
+10.fin mientras
+11.promedio<--suma/5
+12.<<"el promedio de edades mayores o iguales a 16 son:" + promedio 
+13.Fin
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Ejercicio 2
+Las siguientes son los promedios finales de evaluación de docentes:
+colegio1 denominado Bolivar:
+[15, 16.5, 17, 19, 20, 19, 10, 16.4, 15.1, 10]
+colegio2 denominado Sur:
+[14, 11.5, 17.2, 18, 19, 17, 20, 19, 19.1, 8]
+
+Se desea determinar el colegio con mejor promedio de sus docentes, considerar que los promedios de cada colegio son únicamente
+con los valores mayores o iguales a 16.5.
+
+
+1.Inico
+2.(Colegio_Bolivar (10) i [0, n]) <-- [15, 16.5, 17, 19, 20, 19, 10, 16.4, 15.1, 10]
+3.(Colegio_Sur (10) i [0, n]) <-- [14, 11.5, 17.2, 18, 19, 17, 20, 19, 19.1, 8]
+promedio 1 
+promedio 2 
+4.suma i [0, n]
+5.promedio i [0, n]
+6.contador <-- 0
+7.suma <-- 0 
+8.Mientras contador < 9 entonces 
+	9.Si Colegio_Bolivar >= 16.5 entonces
+	10.suma <-- suma + contador 
+	11.Fin si
+12.contador + 1
+13.fin Mientras
+14.promedio1<--suma/5
+15.suma<--0
+16.contador<--0
+17.Mientras contador < 9 entonces 
+	18.Si Colegio_Sur >= 16.5 entonces
+	19.suma <-- suma + contador 
+	20.Fin si
+21.contador <-- contador + 1
+22.fin mientras 
+23.promedio2<--suma/7
+24.si promedio1>promedio2 entonces
+25.<<"el colegio bolivar tiene mayor promedio:" + promedio
+26.caso contrario 
+27.<<"el colegio sur tiene mayor promedio:" + promedio
+28.Fin si
+29.Fin
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+Ejercicio 3
+
+Las siguientes son los promedios finales de evaluación de docentes:
+colegio1 denominado Bolivar:
+[15, 16.5, 17, 19, 20, 19, 10, 16.4, 15.1, 10]
+colegio2 denominado Sur:
+[14, 11.5, 17.2, 18, 19, 17, 20, 19, 19.1, 8]
+Se desea determinar el promedio de final de todos los docentes de los dos colegios
+
+
+1.Inicio
+2.(colegio1 (10) i [0, n]) <-- [15, 16.5, 17, 19, 20, 19, 10, 16.4, 15.1, 10]
+3.(colegio2 (10) i [0, n]) <-- [14, 11.5, 17.2, 18, 19, 17, 20, 19, 19.1, 8]
+4.(promedio1 i [0, n])
+5.(promedio2 i [0, n])
+6.(promedio3 i [0, n])
+7.suma1 <-- 0
+8.suma2 <-- 0
+9.contador <-- 0
+10.Mientras contador < 9 entonces 
+11.suma1 <-- suma1 + colegio1[contador]
+12.suma2 <-- suma2 + colegio2[contador]
+13.contador + 1
+14.Fin mientras
+15.promedio1 <-- suma1/9
+16.promedio2 <-- suma2/9
+17.promedio3 <-- proemdio1 + promedio2/2
+18.<<"el promedio final de todos los docentes es:" + promedio
+19.Fin
